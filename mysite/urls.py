@@ -20,5 +20,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     # this url link polls's url
-    url(r'^polls/',include('polls.urls')),
+    # url(r'^polls/',include('polls.urls')),
+    # It's can be use url name for url route when add namespace 
+    url(r'^polls/',include('polls.urls',namespace='polls')),
 ]
