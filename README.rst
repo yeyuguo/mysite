@@ -2,7 +2,8 @@
 Polls
 =====
 
-> source:http://python.usyiyi.cn/documents/django_182/intro/reusable-apps.html
+> source:http://python.usyiyi.cn/documents/django_182/intro/reusable-apps.html  
+
 Polls is a simple Django app to conduct Web-based polls. For each
 question, visitors can choose between a fixed number of answers.
 
