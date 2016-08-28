@@ -1,0 +1,9 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('test demo base_site') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">app->polls/admin/base_site.html title</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
