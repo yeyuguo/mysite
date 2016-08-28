@@ -6,7 +6,7 @@
         <!-- <li>{{ question.id }}:<a href=" url 'detail' {{ question.id }}/">{{ question.question_text }}</a></li> -->
 
         <!-- use url name replace url's module, polls is namespace -->
-        <li>{{ question.id }}:<a href=" url 'polls:detail' {{ question.id }}/">{{ question.question_text }}</a></li>
+        <li>{{ question.id }}:<a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
         
     {% endfor %}
     </ul>
