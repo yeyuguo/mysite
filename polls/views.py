@@ -1,14 +1,14 @@
 from django.shortcuts import render
 
 # Create your views here.
-from django.http import HttpResponse
+from django.http import HttpResponse,Http404
 
 from models import Choice,Question
 from django.shortcuts import get_object_or_404,render
 
 def index(request):
 	return HttpResponse('hello,you\'re at the polls index html.')
-    
+
 
 def detail(request, question_id):
     # return HttpResponse("You're looking at question %s." % question_id)
